@@ -14,3 +14,10 @@ class FoldablePhone(isScreenLightOn: Boolean = false) : Phone(isScreenLightOn) {
         isFoldable = false
     }
 }
+
+fun main(){
+    val foldable = FoldablePhone()
+    println(foldable.isFoldable)
+    foldable.abrir()
+    println(foldable.isFoldable)
+}
